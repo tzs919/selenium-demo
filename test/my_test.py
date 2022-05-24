@@ -18,6 +18,7 @@ with Chrome() as driver:
 
 
     driver.get("https://www.google.com/")
+    driver.implicitly_wait(5)
 
     # print(EC.title_is("Spitter"))
 

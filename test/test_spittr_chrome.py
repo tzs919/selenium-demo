@@ -47,7 +47,7 @@ class TestSpittrChrome():
         self.driver.find_element(By.NAME, "message").send_keys(
             "----" + time.strftime("%Y-%m-%d  %H:%M:%S", time.localtime()) + "----")
 
-        self.driver.find_element_by_xpath("//input[@type='submit']").click()
+        self.driver.find_element(By.XPATH, "//input[@type='submit']").click()
 
         self.driver.find_element(By.LINK_TEXT, "Logout").click()
         # self.driver.close()
